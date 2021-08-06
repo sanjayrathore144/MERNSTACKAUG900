@@ -1,0 +1,206 @@
+/* logo section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+}
+.header{
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.logoimg{
+    width: 50px;
+    height: 50px;
+}
+.header_nav{
+    float: right;
+    clear: both;
+
+}
+input{
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #529BD1;
+  border-radius: 10px;
+  width: 150px;
+
+}
+input:focus{
+    background-color:#529BD1 ;
+    color: white;
+}
+.login{
+    border: 1px solid #529BD1;
+    background-color: #529BD1;
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px 20px;
+  margin: 8px 0;
+  width: 100px;
+ 
+}
+/* ********************************************* */
+.sticky{
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: #529BD1;
+}
+.menu ul{
+    margin-left: 20%;
+}
+.menu-item li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 15px;
+    margin-left: 100px;
+    font-size: 20px;
+    color: white;
+}
+/* ************************************************ */
+
+.box1{
+    width: 100px;
+    height: 200px;
+    background-color: #529BD1;
+    border: 1px solid black;
+    position: fixed;
+    left: 0;
+    margin-top: 10px;
+    display: block;
+   
+
+}
+.box2{
+    width: 300px;
+    height: 200px;
+    background-color: #529BD1;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 1px;
+    margin-top: 10px;
+    margin-left: 81%;
+
+}
+.background{
+    background: url(image/bg2.jpeg);
+  
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    
+}
+/* ************************************************* */
+
+.blog{
+  width: 100%;
+  height: 500px;
+    margin-top: 0;
+    
+}
+
+.blog1{
+float: left;
+background-color: #529BD1;
+width: 33.33%;
+height: 500px;
+border: 1px solid black;
+
+
+}
+.blog2 {
+    float: left;
+    background-color: #529BD1;
+    width: 33.33%;
+    height: 500px;
+    border: 1px solid black;
+ 
+}
+.blog3{
+        
+        float: left;
+        background-color: #529BD1;
+        width: 33.33%;
+        height: 500px;
+        border: 1px solid black;
+        
+} 
+.blogimg1, .blogimg3, .blogimg2{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 50px;
+
+}
+/* {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 50px;
+}
+{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 50px;
+
+} */
+.para{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* ************************************************* */
+
+.testinomial{
+    margin: 5%;
+  
+}
+.content{
+    color: black;
+    font-size: 25px;
+}
+.name{
+    
+    color: black
+    font-size: 15px;
+    margin-left: 70%;
+}
+
+.footer{
+    background-color: #529BD1;
+    height: 210px;
+    width: 100%;
+}
+.foot-menu, .foot-logo, .address{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    
+}
+
+.menu-list li{
+    font-size: 20px;
+    color: white;
+    list-style: none;
+    margin-left: 15%;
+}
+.address-data{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    list-style: none;
+    margin-left: 15%;
+    text-align: center;
+}
+.fot{
+    width: 100px;
+    margin-left: 40%;
+}
+

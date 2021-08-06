@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table</title>
+</head>
+<style>
+    table{
+        text-align: center;
+        
+    }
+    .table{
+        text-align: center;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+   <table  width="100%" height = "400" border="1">
+       <tr>
+           <td rowspan="3"><b>Day</b></td>
+           <td colspan="3"><b>Seminar</b></td>
+           <!-- <td></td>
+           <td></td> -->
+       </tr>
+       <tr>
+           <!-- <td></td> -->
+           <td colspan="2"><b>Schedule</b></td>
+           <!-- <td></td> -->
+           <td rowspan="2"><b>Topic</b></td>
+       </tr>
+       <tr>
+           <!-- <td></td> -->
+           <td><b>Begin</b></td>
+           <td><b>End</b></td>
+           <!-- <td></td> -->
+       </tr>
+       <!-------------------- end upr vla section------------ -->
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 am</td>
+            <td rowspan="2">5:00 pm</td>
+            <td>Introducation to XML</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td>Validity DTD & Relax NG</td>
+        </tr>
+        <!-- ------------------------------------------------------ -->
+       <tr>
+        <td rowspan="3">Tuesday</td>
+        <td>8:00 am</td>
+        <td>11:00 am</td>
+        <td rowspan="3">
+            <!-- this is a nested table as shown in html1-copy image code and style border-collapse:collpse-->
+            <table  width="100%" height = "100%" border="1" class="table">
+                <tr>
+                    <td>XPath</td>
+                </tr>
+                <tr>
+                    <td>XSL Transformations</td>
+                </tr>
+            </table>
+<!-- this is a nested table as shown in html1-copy image code -->
+        </td>
+    </tr>
+    <tr>
+        <!-- <td></td> -->
+        <td>11:00 am</td>
+        <td>2:00 pm</td>
+        <!-- <td></td> -->
+    </tr>
+    <tr>
+        <!-- <td></td> -->
+        <td>2:00 pm</td>
+        <td>5:00 pm</td>
+        <!-- <td></td> -->
+    </tr>
+
+    <!-- --------------------------------------------------- -->
+    <tr>
+        <td>Wednesday</td>
+        <td>8:00 am</td>
+        <td>12:00 pm</td>
+        <td rowspan="1">XSL Formatting Objects</td>
+    </tr>
+</table>
+       
+   
+</body>
+</html>
