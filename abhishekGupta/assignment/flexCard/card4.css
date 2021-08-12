@@ -78,10 +78,10 @@ span{
     right: 20%;
     font-size: 1rem;
 }
-.information a{
-    position: absolute;
+.information .icons{
+     position: absolute;
     top: 82%;
-    left: 20%;
+    left: 20%; 
     font-size: 1.8rem;
     color:rgb(1, 250, 155);
 }
