@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Montserrat',sans-serif;
+        }
+        .container{
+            background: rgb(2,0,36);
+            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(221,219,55,1) 0%, rgba(61,222,255,1) 100%); 
+            width: 90%;
+            height: 740px;
+            margin-left: 70px;
+            /* box-shadow: black; */
+        }
+        .parent{
+            width: 30%;
+            height: 350px;
+            background-color: white;
+            position: absolute;
+            margin-left: 450px;
+            margin-top: 190px;
+            box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 6px rgba(0, 0, 0, 0.19);
+            border-radius: 20px;
+            
+
+        }
+        .child1 img{
+            width: 100%;
+            height: 350px;
+            border-radius: 20px 0 0 20px;
+
+        }
+        .child1{
+            width: 35%;
+            height: 350px;
+            /* background-color: blue; */
+           
+        }
+        .child3{
+            width: 65%;
+            height: 350px;
+            background-color:white;
+            position: absolute;
+            top: 0px;
+            left: 159.5px;
+            border-radius: 0 20px 20px 0;
+              
+        }
+        i{
+            margin-left: 38px;
+            padding: 10px;
+            font-size: 20px ;
+            color: green;
+        }
+        .child2 img{
+            width: 20%;
+            height: 90px;
+            position: absolute;
+            z-index: 1;
+            top: 40px;
+            left: 100px;
+            border: 5px solid white;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="child1">
+                <img src="ant.jpg" alt="">
+            </div>
+            <div class="child2">
+                <img src="icon.jpg" alt="">
+            </div>
+            <div class="child3">
+                <p style="text-align:right; margin-right: 40px; margin-top: 60px; color: green; font-weight: bold;">
+                    Ant Collector
+                </p>
+                <h1 style="padding-right: 100px; padding-left: 40px;">Morgan Sweeney</h1>
+                <p style="padding-left: 42px; padding-right: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem iusto nostrum asperiores illo.</p>
+                <i class="far fa-heart"></i>
+                <i class="far fa-envelope"></i>
+                <i class="fas fa-user-friends"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
