@@ -91,6 +91,8 @@ span{
 #icon-3{
     padding-left:6em;
 }
-a:hover i{
-    color: rgb(78, 192, 196);
+
+.information a:hover {
+    
+    color: rgb(100, 37, 201);
 }
