@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Montserrat',sans-serif;
+        }
+        .one{
+            width: 100%;
+            /* height: 80px; */
+            /* background-color: thistle; */
+            display: flex;
+            align-items: left;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+        }
+        .c1{
+            
+            padding: 3px 0px 0 30px;
+            /* background-color: tomato; */
+            width: 20%;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .c2{
+            display: flex;
+            /* background-color: yellow; */
+            width: 80%;
+            height: 80px;
+            align-items: center;
+            margin-left: 650px;
+            
+        }
+        .c2 a{
+            padding: 12px;
+            color: black;
+            text-decoration: none;
+            
+        }
+        .c2 a:hover{
+            font-weight: bold;
+        }
+        .c2 input{
+            background-color: royalblue ;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-left: 20px;
+            border: 0px;
+        }
+        .x{
+            font-size:100px;
+            margin-top: 0px;
+            color: grey;
+            opacity: 20%;
+            z-index: 0;
+        }
+        .three{
+            display: grid;
+            width: 90%;
+            height: 500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 'o tw th'
+                                 'fo fi fi';
+            grid-gap: 10px;
+            /* background-color: blueviolet; */
+            margin-left:70px;
+            z-index: 1;
+            position: absolute;
+            top: 280px;
+            margin-bottom: 900px; 
+            padding: 20px;
+            /* doubt */
+           
+        }
+        .three div{
+            background-color:white  ;
+            height: 300px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);     
+            
+            
+        }
+        .un{
+            grid-area: o;
+        }
+        .deux{
+            grid-area: tw;
+        }
+        .troix{
+            grid-area: th;
+        }
+        .quatre{
+            grid-area: fo;
+        }
+        .cinq{
+            grid-area: fi;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <div class="c1">
+                <p>Splash</p>
+            </div>
+            <div class="c2">
+                <a href="">Home</a>
+                <a href="">Intro</a>
+                <a href="">Blog</a>
+                <a href="">Works</a>
+                <a href="">Pages</a>
+                <a href="">Components</a>
+                <form action="">
+                    <label for="Request A Quote">
+                        <input type="submit" value="Request A Quote">
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="two">
+            <center><p><h2 style="margin-top: 50px;">What We Can Offer</h2></p></center>
+            <hr style="width: 30px;">
+            <center><p class="x">Services</p></center>
+            
+        </div>
+        <div class="three">
+            <div class="un"></div>
+            <div class="deux"></div>
+            <div class="troix"></div>
+            <div class="quatre"></div>
+            <div class="cinq"></div>
+        </div>
+    </div>
+</body>
+</html>
