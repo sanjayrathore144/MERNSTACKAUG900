@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid assignment</title>
+    <!-- fontawsome link -->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+    <!-- Fontawsone icone link -->
+    <script src="https://kit.fontawesome.com/180b299cc2.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        margin: 10px;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #FCFCFD;
+        
+        
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        border-top: 1px solid #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+        height: 50px;
+    }
+    
+    
+    .logo{
+        float: left;
+        font-size: 20px;
+        color: black;
+        margin-left: 30px;
+
+    }
+    .nav-item{
+        float: right;
+        color: black;margin-right: 30px;
+    }
+    .nav-item li{
+        display: inline;
+        margin: 15px;
+    }
+    .request{
+        background-color: #6A63EE;
+        padding: 10px 30px;
+        width: 30px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+    }
+    .offer{
+        margin-top: 5%;
+        text-align: center;
+        position:relative;
+    
+    }
+    .offer::after{
+        content:'';
+    position:absolute;
+    left:0; 
+    right:0;
+    top:100%;
+    margin:10px auto;
+    width:3%;
+    height:4px;
+    background:#E0E3EC;
+    }
+    .offer p{
+        font-size: 30px;
+        color: black;
+
+    }
+    .services{
+        margin: 10px auto;
+       
+    }
+    .service p{
+        text-align: center;
+        font-size: 90px;
+        color: #F1F2F6;
+        position: relative;
+        font-weight: 700;
+
+    }
+    .container{
+      
+        display: grid;
+        height: 90vh;
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 'o tw th'
+                             'fo fi fi';
+        grid-gap: 50px;
+        top: 335px;
+        left: 10%;
+        position: absolute;
+
+        
+    }
+    .container .one, .two, .three, .four, .five{
+        background-color: white;
+       text-align: center;
+        box-shadow: 0 0 15px -2px #f1f2f6;
+
+    }
+   .one{
+       grid-area: o;
+   }
+   .two{
+       grid-area: tw;
+   }
+   .three{
+       grid-area: th;
+   }
+   .four{
+       grid-area: fo;
+   }
+   .five{
+       grid-area: fi;
+   }
+   
+   .icon1{
+    background: linear-gradient(71deg, rgba(201,85,197,1) 0%, rgba(201,85,197,1) 44%, rgba(119,96,232,1) 100%);
+    margin-top: 10%;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+
+   }
+   .icon2{
+    background: linear-gradient(71deg, rgba(252,114,100,1) 0%, rgba(252,114,100,1) 44%, rgba(249,63,162,1) 100%);
+    margin-top: 10%;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+    
+    width: 20px;
+
+   }
+   .icon3{
+    background: linear-gradient(71deg, rgba(0,212,193,1) 0%, rgba(0,212,193,1) 44%, rgba(0,158,234,1) 100%);
+    margin-top: 10%;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+   }
+   .icon4{
+    background: linear-gradient(71deg, rgba(255,175,34,1) 0%, rgba(255,175,34,1) 44%, rgba(255,97,74,1) 100%);
+    margin-top: 10%;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+   }
+   .head{
+       font-size: 30px;
+       color: black;
+       margin: 20px auto;
+   }
+   .para{
+       font-size: 15px;
+       text-align: justify;
+       margin:10px auto;
+       padding: 0 40px;
+   }
+   .learn{
+       font-size:17px;
+       color: black;
+       border-bottom: 1px solid grey;
+       width: 90px;
+       text-align: center;
+       margin: 0 auto;
+       margin-top: 30px;
+       
+   }
+   
+    
+</style>
+<body>
+    <div style="height: 130vh;">
+    <div class="header">
+        <div class="nav">
+            <p class="logo">Splash</p>
+            <ul class="nav-item">
+                <li>Intro</li>
+                <li>Blog</li>
+                <li>Home</li>
+                <li>Work</li>
+                <li>Blog</li>
+                <li>Pages</li>
+                <li>Component</li>
+                <li class="request">Rquest a Quote</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="offer">
+        <p>What We Can Offer</p>
+    </div>
+
+    <div class="service">
+        <p>Services</p>
+    </div>
+
+    <div class="container">
+        <div class="one">
+            
+                <i class="fas fa-columns icon1"></i>
+                <p class="head">Web Design</p>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Facere earum ex eligendi repellendus quos illo.repellendus quos illo.</p>
+                
+                <p class="learn">Learn More</p>
+
+            
+        </div>
+        <div class="two">
+            <i class="fas fa-mobile icon2"></i>
+                <p class="head">Mobile App</p>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Facere earum ex eligendi repellendus quos illo.repellendus quos illo.</p>
+                
+                <p class="learn">Learn More</p>
+        </div>
+        <div class="three">
+            <i class="fas fa-search-dollar icon3"></i>
+                <p class="head">Branding</p>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Facere earum ex eligendi repellendus quos illo.repellendus quos illo.</p>
+                
+                <p class="learn">Learn More</p>
+        </div>
+        <div class="four">
+            <i class="fas fa-pencil-ruler icon4"></i>
+                <p class="head">Illustrations</p>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Facere earum ex eligendi repellendus quos illo.repellendus quos illo.</p>
+                
+                <p class="learn">Learn More</p>
+        </div>
+        <div class="five">
+            <div class="full">
+                <div> 
+                    <p class="full-head">Full Service Agency</p>
+                    <p class="full-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quae totam quos, asperiores repellat dolor iste cumque quidem quas. Voluptatum, tempora.
+                   </p>
+                   <button class="btn">Request a Quote</button>
+                </div>
+
+                <div> 
+                    <ul class="ul">
+                        <li><i class="far fa-check-circle"></i>Seo&Marketing</li>
+                        <li><i class="far fa-check-circle"></i>Logotypes</li>
+                        <li><i class="far fa-check-circle"></i>Print Design</li>
+                        <li><i class="far fa-check-circle"></i>Testing</li>
+                        <li><i class="far fa-check-circle"></i>Support</li>
+                    </ul>
+                </div>
+               
+
+            </div>
+        </div>
+       
+    </div>
+</div>
+    <style>
+        .full{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            position: relative;
+            
+        }
+        .full div{
+            padding: 40px;
+            width: 400px;
+        }
+       .ul{
+          
+            text-align: justify;
+            list-style: none;
+            margin-top: 20%;
+        }
+        .ul li{
+            left: 30px;
+            line-height: 2rem;
+            
+        }
+        .fa-check-circle{
+            position: absolute;
+            margin-left: -30px;
+            color: #A0B0FA;
+            line-height: 2rem;
+            
+        }
+    
+        .full-head{
+            font-size: 30px;
+            text-align: justify;
+
+        }
+        .full-para{
+            font-size: 15px;
+            text-align: justify;
+            
+        }
+        .btn{
+            border: 1px solid #cecfd3;
+            border-radius: 50px;
+            padding: 10px 30px;
+            color: black;
+            background-color: white;
+            float: left;
+            margin-top: 30px;
+
+        }
+        
+    </style>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    
+    
+</body>
+</html>

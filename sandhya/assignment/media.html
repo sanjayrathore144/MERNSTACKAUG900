@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query </title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-gap: 10px;
+        width: 500px;
+        height: 200px;
+        grid-template-areas: 'one two';
+        margin: 10px auto;
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    .one{
+        grid-area: one;
+    }
+    .two{
+        grid-area: two;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .container{
+        
+        width: 200px;
+        height: 400px;
+        grid-template-areas: 'two'
+                             'one';
+        margin: 10px auto;
+    }
+  
+    }
+
+</style>
+<body>
+    
+
+    <div class="container">
+        <div class="one">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nihil.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nihil.
+</p>
+        </div>
+        
+      <div class="two">
+          <img src="image/4.jpg" alt="" class="img">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br><br>
+
+    <style>
+        .box{
+            width: 100%;
+            display: grid;
+            margin: 10px auto;
+            height: 250px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap:10px;
+            grid-template-areas: 'box1 box2 box3 box4';
+    
+        }
+        .box1{
+            grid-area: box1;
+            background-image: url(image/b1);
+        }
+        .box2{
+            grid-area: box2;
+            background-image: url(image/b2);
+        }
+        .box3{
+            grid-area: box3;
+            background-image: url(image/b3);
+        }
+        .box4{
+            grid-area: box4;
+            background-image: url(image/b4);
+        }
+        .boxes{
+            height:50vh;
+        }
+        @media only screen and (max-width:796px) {
+            .box{
+            grid-template-areas: 'box1 box2'
+                                 'box3 box4';
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            
+
+            }
+            .box div{
+                height: 250px;
+            }
+            .boxes{
+            height:100vh;
+        }
+        }
+
+        @media only screen and (max-width:500px) {
+            .box{
+            grid-template-areas: 'box1'
+                                 'box2'
+                                 'box3'
+                                 'box4' ;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            
+
+            }
+            .box div{
+                height: 300px;
+            }
+            .boxes{
+            height:200vh;
+        }
+        }
+    </style>
+
+    <h2 style="text-align: center;">responsive box 4-2-1</h2>
+    <div class="boxes">
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+    </div>
+</div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+    <style>
+        .facebook{
+           background-color: #F0F2F5;
+           
+           height: 500px;
+           
+    
+        }
+        .page{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 70px;
+            width: 100%;
+            align-items: center
+        }
+
+        .para{
+            width: 430px;
+        }
+        
+        
+        .login-page{
+            
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width: 295px;
+            height: 320px;
+            box-shadow: 0 0 15px -2px #D5D7DA;
+            
+        }
+        
+       
+        input{
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .signin{
+            background-color: #1877F2;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            width: 270px;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+        }
+        .forget{
+            color: #1877F2;
+            text-align: center;
+
+        }
+        .create{
+            background-color: #42B72A;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            width: 270px;
+            height: 45px;
+            border-radius: 5px;
+
+            border: none;
+
+        }
+        .hr{
+            width: 270px;
+
+        }
+        .for{
+            text-align: center;
+            font-size: 13px;
+        }
+        .para .face{
+            font-weight: 700;
+            font-size: 60px;
+             margin: 0px;
+            color: #1877F2;
+        }
+        .para .help{
+            font-size: 25px;
+            font-weight: 500;
+            margin: 10px 0;
+
+        }
+        
+      
+        @media only screen and (max-width:500px) {
+            .page{
+                flex-direction: column;
+            } 
+            .para {
+              text-align: center;
+            }
+            .help{
+              padding: 10px;
+            }
+      
+
+            .facebook {
+               background-color: #F0F2F5;
+            height: 700px;
+           }
+         
+            
+        }
+
+    </style>
+    <h2 style="text-align: center;">Login page of facebook</h2>
+    <div class="facebook">
+        <div class="page">
+            <div class="para">
+                <p class="face">facebook</p>
+                <p class="help">
+                    Facebook helps you to connect and share with the people in your life
+                </p>
+            </div>
+
+            <div class="login">
+                <div class="login-page">
+                <input type="text" placeholder="Email address or phone number">
+                <input type="text" placeholder="Password">
+                <button class="signin">Login</button>
+                <p class="forget">Forget Password?</p>
+                <hr class="hr">
+                <button class="create">Create New Account</button>
+                </div>
+                <p class="for"><b>Create a page</b>, for celebirity, brand or business</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

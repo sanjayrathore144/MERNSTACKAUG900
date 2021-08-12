@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform grid</title>
+</head>
+<body>
+    
+     <style>
+ 
+.contaniners {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-gap: 10px;
+ width: 500px;
+ height: 500px;
+ background-color:white;
+ transform: rotate(-45deg);
+ margin: 100px auto;
+}
+ 
+.img {
+ background-image: url(image/fl.jpg);
+ position: relative;
+}
+.nobg{
+  background-color:white!important;
+  visibility: hidden;
+}
+.inner{
+position: absolute;
+background-color: white;
+width: 0%;
+height: 0%;
+transition: 1s;
+top: 50%;
+left: 50%;
+overflow: hidden;
+
+}
+.img:hover .inner{
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.inner div{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+
+     </style>
+     <h2 style="text-align: center;">transform grid</h2>
+
+     <div class="contaniners">
+       
+        <div class="img">
+          <div class="inner">
+            <div>This is done!</div>
+          </div>
+        </div>
+        <div class="img nobg"></div>
+        <div class="img nobg"></div>
+        <div class="img">
+          <div class="inner">
+            <div>This is done!</div>
+          </div>
+        </div>
+        <div class="img">
+          <div class="inner">
+            <div>This is done!</div>
+          </div>
+        </div>
+        <div class="img nobg"></div>
+        <div class="img nobg"></div>
+        <div class="img">
+          <div class="inner">
+            <div>This is done!</div>
+          </div>
+        </div>
+        <div class="img">
+          <div class="inner">
+            <div>This is done!</div>
+          </div>
+        </div>
+       
+      </div>
+    
+</body>
+</html>
