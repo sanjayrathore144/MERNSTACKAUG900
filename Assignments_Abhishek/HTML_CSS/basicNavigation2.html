@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: url(natu.jpg);
+        }
+        .wrapper{
+            width: 90%;
+            height: 60px;
+            background-color: aqua;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px yellow;
+            /* overflow: hidden; */
+            font-family: sans-serif;
+           
+            
+        }
+        .wrapper ul {
+            list-style: none;
+            padding: 0;
+            position: relative;
+          
+        }
+        .wrapper ul li{
+            float: left;
+            width: 20%;
+            text-align: center;
+            line-height: 60px;   
+            background-color:black;  
+            color:yellow ;    
+            font-size: 20px;
+            /* font-weight: bolder; */
+        }
+        .wrapper ul li:hover{
+            background-color: #fc5c9c;
+            color: #c5e3f6;
+        }
+        /* .wrapper ul li ul li{
+            width: 100%;
+            display: none;
+        } */
+        .wrapper ul li:hover ul li{
+            display: block;
+
+        }
+        .megamenu{
+            width: 100%;
+            height: 500px;
+            background-color: aquamarine;
+            position: absolute;
+            top:60px;
+            left:0;
+            display: none;
+           
+            overflow: scroll;
+
+        }
+        .wrapper ul li:hover .megamenu{
+            display: flex;
+            justify-content: space-evenly;
+            border:1px solid black;
+            /* align-items: center; */
+           
+        }
+        .megamenu .submenu {
+            width: 19.5%;  
+            /* background-color: brown; */
+                  
+        }
+        .megamenu .submenu ul{
+            width: 100%;
+            margin-top:70px;
+            margin-bottom: 30px;
+        }
+
+        .megamenu ul li {
+            width: 100%;
+                }
+        .megamenu ul li:nth-child(1){
+            font-size: 20px;
+            background-color: blue;
+        }
+        .submenu::after{
+            content: "hello";
+            display: block;
+            width: 100px;
+            height: 50px;
+            /* font-size: 0; */
+            color: aqua;
+            background-color: #fc5c9c;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>Home</li>
+            <li>About <i class="fa fa-angle-down" ></i> 
+                <div class="megamenu">
+                        <div class="submenu">
+
+                            <ul>
+                                <li>mens Tshirt</li>
+                                <li>Mens Shirt</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                            </ul>
+                            <!-- <h1>hello</h1> -->
+
+                        </div>
+                        <div class="submenu">
+
+                            <ul>
+                                <li>mens Tshirt</li>
+                                <li>Mens Shirt</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                            </ul>
+                            <!-- <h1>hello</h1> -->
+
+                        </div>
+                        <div class="submenu">
+
+                            <ul>
+                                <li>mens Tshirt</li>
+                                <li>Mens Shirt</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                            </ul>
+                            <!-- <h1>hello</h1> -->
+
+                        </div>
+                        <div class="submenu">
+
+                            <ul>
+                                <li>mens Tshirt</li>
+                                <li>Mens Shirt</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                            </ul>
+                            <!-- <h1>hello</h1> -->
+
+                        </div>
+                        <div class="submenu">
+
+                            <ul>
+                                <li>mens Tshirt</li>
+                                <li>Mens Shirt</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                                <li>Trousers</li>
+                                <li>Shoes</li>
+                                <li>Fashion</li>
+                            </ul>
+                            <!-- <h1>hello</h1> -->
+
+                        </div>
+                            
+                            
+                        </div>
+                        <!-- <ul>
+                            <li>Company</li>
+                            <li>Customer</li>
+                            <li>Policy</li>
+                    <li>T&C</li>
+                </ul> -->
+            </li>
+            <li>Services
+                <!-- <ul>
+                    <li>Development</li>
+                    <li>Training</li>
+                    <li>Hosting </li>
+                    <li>SEO</li>
+                </ul> -->
+            </li>
+            <li>Contact</li>
+            <li>Login</li>
+        </ul>
+    </div>
+</body>
+</html>

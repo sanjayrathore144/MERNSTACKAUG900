@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: url(natu.jpg);
+        }
+        .wrapper{
+            width: 90%;
+            height: 60px;
+            background-color: aqua;
+            margin: 30px auto;
+            box-shadow: 0px 0px 15px yellow;
+            
+        }
+        .wrapper ul {
+            list-style: none;
+            padding: 0;
+          
+        }
+        .wrapper ul li{
+            float: left;
+            width: 20%;
+            text-align: center;
+            line-height: 60px;   
+            background-color:black;  
+            color:yellow ;    
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .wrapper ul li:hover{
+            background-color: #fc5c9c;
+            color: #c5e3f6;
+        }
+        .wrapper ul li ul li{
+            width: 100%;
+            display: none;
+        }
+        .wrapper ul li:hover ul li{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>Home</li>
+            <li>About 
+                <ul>
+                    <li>Company</li>
+                    <li>Customer</li>
+                    <li>Policy</li>
+                    <li>T&C</li>
+                </ul>
+            </li>
+            <li>Services
+                <ul>
+                    <li>Development</li>
+                    <li>Training</li>
+                    <li>Hosting </li>
+                    <li>SEO</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+            <li>Login</li>
+        </ul>
+    </div>
+</body>
+</html>
