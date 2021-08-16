@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- fontawsome link -->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+    <!-- Fontawsone icone link -->
+    <script src="https://kit.fontawesome.com/180b299cc2.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        background-image: url(image/bg.jpg);
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .header-content{
+        float: left;
+        margin: 25% 20% 0;
+        width: 20%;
+
+    }
+    .think{
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #000;
+    }
+    .html{
+        font-size: 40px;
+        font-weight: 600;
+        color: black;
+    }
+    .shop{
+        padding: 10px;
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        border-radius: 50px;
+        border: none;
+    }
+    .about{
+        background-color: white;
+        margin: 5% 20%;
+    }
+    .find{
+        font-size: 30px;
+        font-weight: 600;
+        color: black;
+    }
+    .find-data{
+        font-size: 15px;
+        color: black;
+        text-align: justify;
+        padding: 10px;
+    }
+    .border{
+        background-color: #F7C766;
+        height: 100px;
+    }
+    .border-text{
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        color: white;
+        padding: 32px 0;
+    }
+    .headphone{
+        background-color: white;
+        /* width: 300px;
+        padding: 30px; */
+
+    }
+    .head{
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        text-align: start;
+        margin: 0 20%;
+    margin-top: 6%;
+    }
+    .head-list{
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 2% 20%;
+    align-items: center;
+}
+
+
+    }
+    .head-list .h1, .h2, .h3 {
+        width: 250px;
+        height: 350px;
+    }
+    .h1, .h2, .h3{
+        grid-area: h1;
+        background-color: #F7C766;
+        margin-top: 7px;
+        
+    }
+    .image{
+        width: 250px;
+        height: 180px;
+        position: relative;
+    }
+    .images{
+        width: 190px;
+        height: 150px;
+        position: relative;
+    }
+    .he{
+        color: black;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .para{
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+        width: 200px;
+    }
+    .to{
+        background-color: #F7C766;
+        color: black;
+        border-radius: 50px;
+        padding: 10px;
+        border: none;
+        font-size: 10px;
+        position: absolute;
+        margin-left: -240px;
+        margin-top: 10px;
+    }
+    .im{
+        background-color: white;
+    }
+
+
+
+    @media only screen and (max-width: 1024px) {
+        .header{
+            height: 600px;
+   
+        }
+        .h1, .h2, .h3 {
+    width: 180px;
+    margin-top: 7px;
+}
+.head-list {
+
+    width: 600px;
+    
+}
+.image {
+    width: 180px;
+    height: 150px;
+    position: relative;
+}
+.to {
+    margin-left: -170px;
+   
+}
+.images {
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+.im{
+    width: 140px; 
+}
+    }
+    @media only screen and (max-width: 768px) {
+        .header{
+            height: 600px;
+   
+        }
+        .h1, .h2, .h3 {
+    width: 180px;
+    margin-top: 7px;
+}
+.head-list {
+    margin: 2% 10%;
+    width: 600px;
+    
+}
+s
+.image {
+    width: 180px;
+    height: 150px;
+    position: relative;
+}
+.to {
+    margin-left: -170px;
+   
+}
+.images {
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+.im{
+    width: 140px; 
+}
+.header-content {
+    float: left;
+    margin: 25% 20% 0;
+    width: 50%;
+}
+    }
+
+    @media only screen and (max-width: 500px) {
+        .header{
+            height: 600px;
+            background-size: cover;
+   
+        }
+      
+         .header-content {
+    float: left;
+    margin: 25% 20% 0;
+    width: 80%;
+}
+        
+        .h1, .h2, .h3 {
+    width: 100%;
+    margin-top: 7px;
+}
+.head-list {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+.to {
+    margin-left: -450px;
+   
+}
+.para {
+    width: 100%;
+}
+.images {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.im{
+    width: 100%; 
+    flex-direction: column;
+}
+    }
+</style>
+<body>
+    
+    <div class="header">
+        <i class="fas fa-bars" style="float: right;margin:20px;"></i>
+
+        <div class="header-content">
+            <p class="think">
+                Thinking of buying Headphone?
+            </p>
+            <p class="html">
+                Html Business Template
+            </p>
+            <button class="shop">Shopping Now</button>
+
+        </div>
+
+    </div>
+
+    <div class="about">
+        <p class="find">Find a quality and right headphones are not easy</p>
+        <p class="find-data"><b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. </p>
+
+    </div>
+
+    <div class="border">
+        <p class="border-text">Business Html Template Free Download</p>
+    </div>
+
+    <div class="headphone">
+        <p class="head">Hottest Headphones of the month</p>
+        <div class="head-list">
+            
+            <div class="h1">
+                <img src="image/h1" alt="" class="image">
+                <span class="to">HEADPHONE</span>
+                <p class="he">Headphone</p>
+                <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="h2">
+                <img src="image/h2" alt="" class="image">
+                <span class="to">HEADPHONE</span>
+                <p class="he">Headphone</p>
+                <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="h3">
+                <img src="image/h3" alt="" class="image">
+                <span class="to">HEADPHONE</span>
+                <p class="he">Headphone</p>
+                <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="headphone">
+        <p class="head">Meet Our New Headphone <i class="fas fa-fire" style="color: #F4CB46;"></i></p>
+        <div class="head-list">
+            
+            <div class="h1 im">
+                <img src="image/h4" alt="" class="images">
+                
+            </div>
+
+            <div class="h2 im">
+                <img src="image/h1" alt="" class="images">
+                
+            </div>
+
+            <div class="h3 im">
+                <img src="image/h3" alt="" class="images">
+               
+            </div>
+            <div class="h3 im">
+                <img src="image/h2" alt="" class="images">
+               
+            </div>
+            <div class="h1 im">
+                <img src="image/h2" alt="" class="images">
+                
+            </div>
+
+            <div class="h2 im">
+                <img src="image/h3" alt="" class="images">
+                
+            </div>
+
+            <div class="h3 im">
+                <img src="image/h1" alt="" class="images">
+               
+            </div>
+            <div class="h3 im">
+                <img src="image/h4" alt="" class="images">
+               
+            </div>
+        </div>
+    </div>
+    <style>
+        .borders{
+        background-color: #F7C766;
+        height: 150px;
+        padding: 40px;
+        display: flex;
+        
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .border-texts{
+        text-align: left;
+        font-size: 10px;
+        color: white;
+       
+    }
+    .like{
+        color: white;
+        font-size: 30px;
+        text-align: left;
+        font-weight: 600;
+        width: 300px;
+    }
+    .footer{
+        padding: 30px;
+        height: 250px;
+        
+    }
+    .foot{
+        text-align: center;
+        font-size: 30px;
+        color: black;
+    }
+
+    .foot-grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 20%;
+    
+
+    }
+    .oo{
+        font-size: 60px;
+        color: #F7C766;
+        font-weight: 700;
+        position:relative;
+        width: 100px;
+        z-index: 2;
+
+    }
+    .high{
+        position: absolute;
+        color: black;
+        z-index: 5;
+        font-size: 15px;
+        margin-top: -40px;
+    }
+
+    
+    </style>
+
+    <div class="borders">
+        <div class="bod"><p class="border-texts">Hurry up offer is limited</p>
+            <p class="like">Like it? Pre-order and get a discount</p></div>
+        <div class="bod2">
+            <button class="shop">Shopping Now</button>
+        </div>
+
+        
+    </div>
+
+    <div class="footer">
+        <p class="foot"> Why do you have to buy headphones only for us?</p>
+        <div class="foot-grid">
+            <div class="foot1">
+                <p class="oo">01.</p>
+                <p class="high">HIGH QUILITY</p>
+            </div>
+            <div class="foot2">
+                <p class="oo">02.</p>
+                <p class="high">ORIGINAL DEVICES</p>
+            </div>
+            <div class="foot3">
+                <p class="oo">03.</p>
+                <p class="high">YEAR WARRANTY</p>
+            </div>
+            <div class="foot4">
+                <p class="oo">04.</p>
+                <p class="high">WEEK TO CHECK</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

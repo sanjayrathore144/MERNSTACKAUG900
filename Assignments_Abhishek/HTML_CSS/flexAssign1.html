@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            /* background-color: aliceblue; */
+            border: 1px solid aliceblue;
+        }
+        .wrapper h1 {
+            text-align: center;
+            margin-top:100px
+        }
+        .cards{
+            width: 60%;
+            height: 400px;
+            /* background-color: blueviolet; */
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card{
+            width: 28%;
+            height: 100%;
+            /* background-color: antiquewhite; */
+        }
+        .card img{
+            width: 100%;
+            height: 40%;
+        }
+        .card .other{
+            width: 100%;
+            height: 60%;
+            box-shadow: 0px 1px 3px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            color: gray;
+        }
+        .card .other h2{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Blog Cards</h1>
+        <div class="cards"> 
+            <div class="card">
+                <img src="natu.jpg" alt="">
+                <div class="other">
+                    <h4>consectetur, adipisicing elit. Odio, cupiditate.</h4>
+                    <p> adipisicing elit. Libero quaerat quo animi! Quaerat assumenda veritatis ut voluptatem excepturi suscipit nam.</p>
+                    <h2>Read More..  </h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="natu.jpg" alt="">
+                <div class="other">
+                    <h4>consectetur, adipisicing elit. Odio, cupiditate.</h4>
+                    <p> adipisicing elit. Libero quaerat quo animi! Quaerat assumenda veritatis ut voluptatem excepturi suscipit nam.</p>
+                    <h2>Read More..  </h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="natu.jpg" alt="">
+                <div class="other">
+                    <h4>consectetur, adipisicing elit. Odio, cupiditate.</h4>
+                    <p> adipisicing elit. Libero quaerat quo animi! Quaerat assumenda veritatis ut voluptatem excepturi suscipit nam.</p>
+                    <h2>Read More..  </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

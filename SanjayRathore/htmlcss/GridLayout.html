@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 80%;
+            height: 80vh;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 'o o tw'
+                                 'th fo tw'
+                                 'th fi fi';
+            grid-gap:10px;
+        }
+        .container div{
+            background-color: brown;
+        }
+        .one{
+            grid-area: o;
+        }
+        .two{
+            grid-area: tw;
+        }
+        .three{
+            grid-area: th;
+        }
+        .four{
+            grid-area: fo;
+        }
+        .five{
+            grid-area: fi;
+        }
+    </style>
+
+</head>
+<body>
+    
+       <div class="container">
+           <div class="one"></div>
+           <div class="two"></div>
+           <div class="three"></div>
+           <div class="four"></div>
+           <div class="five"></div>
+       </div>
+
+</body>
+</html>
