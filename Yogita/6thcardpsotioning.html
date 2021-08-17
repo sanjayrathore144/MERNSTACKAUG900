@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>6th Card</title>
+</head>
+<style>
+    body{
+        background: rgb(9,121,12);
+        background: radial-gradient(circle, rgba(9,121,12,1) 0%, rgba(249,255,0,1) 70%);
+    }
+    .parent{
+            display:flex;
+            width: 500px;
+            height: 400px;
+            margin: auto;
+            margin-top: 90px;
+            border-radius: 40px;
+    }
+    .one{
+        width:30%;
+        background-image: url("leaf.jpg");
+        /* border-radius: 40px 0 0 40px; */
+        /* overflow: hidden; */
+
+    }
+    .two{
+        width:70%;
+        /* border-radius: 0 40px 40px 0; */
+        background-color: white;
+        overflow: hidden;
+    }
+    .imgboy{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border:white solid 5px;
+        position:relative;top: 60px;right:30px;
+    }
+    .divtag{
+        display: flex; justify-content:space-around; position:  relative; right:30px;top: 20px;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two">
+            <image class="imgboy" src="boy.jpg"></image>
+            <p style="font-weight: bolder;position: relative; left: 190px; top:2px;">Ant Collector</p>
+            <div style="display: flex; flex-direction: column; font-size: x-large; font-weight: bold; margin-left: 45px;">
+                Morgan<br> Sweeney
+                <p style=" font-size: medium; font-weight: lighter; margin-left: 2px; margin-right: 3px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit voluptatum voluptas quae ipsam fuga perspiciatis accusamus asperiores? Saepe, ad vitae!
+                </p>
+                <div class="divtag">
+                    <img src="heart.PNG">
+                    <img src="message.PNG">
+                    <img src="people.PNG">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

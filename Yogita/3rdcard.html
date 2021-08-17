@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Card</title>
+    <style>
+        .parent{
+            display: flex;justify-content:space-evenly;
+            width:80%;height: 500px;
+            background-color:white;
+            margin-top: 50px;
+            margin-left: 90px;
+            border:black 2px solid;
+
+        }
+        .child{
+            width: 30%;
+            height: 450px;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+            border:black solid 1px;
+            text-align: center;
+            margin-top: 19px;
+        }
+        img{
+            width:100px; height:100px;border-radius:50%;
+        }
+        button{
+            background-color: black;width: 300px;
+            border-radius: 30px;
+            color: white;
+            height: 50px;
+            font-weight:normal;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+        p{font-size: x-large;font-family: fantasy; line-height: 25px;}
+        .para{
+            font-size: medium;font-family: sans-serif; font-weight: normal;text-align:center;
+            width: 250px;
+        }
+        #child2{
+            color: white;
+            background-color: violet;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border-color: violet;
+        }
+        .btn2{
+            border-radius: 30px;
+            color:black;background-color: white;
+            height: 50px;
+            font-weight:normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+                <img src="twitter.png" width="100px" height="100px">
+                <p>TWITTER</p>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptates est unde consequuntur obcaecati tempore assumenda omnis ratione id similique!</p>
+                <button name="Read More">READ MORE</button>
+        </div>
+        <div class="child" id="child2">
+            <img src="insta.jpg" width="100px" height="100px">
+            <p>INSTAGRAM</p>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptates est unde consequuntur obcaecati tempore assumenda omnis ratione id similique!</p>
+            <button class="btn2" style="color: violet;">READ MORE</button>
+        </div>
+        <div class="child">
+            <img src="youtubewhite.png" width="100px" height="100px">
+            <p>YOUTUBE</p>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptates est unde consequuntur obcaecati tempore assumenda omnis ratione id similique!</p>
+            <button name="Read More">READ MORE</button>
+        </div>
+    </div>
+</body>
+</html>
