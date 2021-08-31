@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1" data-action="view" data-pid="4" >lorem 1</p>
+    <p id="p1" class="one">lorem 2</p>
+    <p id="p1" class="one"> lorem 3</p>
+    <button id="1" class="one">click</button>
+</body>
+<script>
+    var p= document.getElementById("p1");
+    console.log(p.dataset.action);
+    console.log(p.dataset.pid);
+    p.style.backgroundColor="red";
+    // console.log(document.getElementsByClassName("one"));
+    // console.log(document.getElementsByTagName("p"));
+    // console.log(document.querySelector(".one")) ;
+    // console.log(document.querySelectorAll(".one")) ;
+    // document.querySelectorAll
+
+
+
+</script>
+</html>

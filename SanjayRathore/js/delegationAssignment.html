@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards{
+            width: 80%;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            box-shadow: 0px 0px 15px lightgray;            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="pid">
+    <input type="text" name="" id="pname">
+    <input type="text" name="" id="pqty">
+    <button onclick="add()">add</button>
+    <div class="cards" id="cards" onclick="show()">
+        
+    </div>
+
+    <script>
+        function add(){
+            var pid = document.getElementById("pid").value;
+            var pname = document.getElementById("pname").value;
+            var pqty = document.getElementById("pqty").value;
+
+            var card = `<div class="card">
+                            <h2>${pname}</h2>
+                            <p>id:${pid}</p>
+                            <p>qty:${pqty}</p>
+                            <button data-id=${pid} data-pname=${pname} data-pqty=${pqty} >show</button>
+                        </div>`
+            // var cards;
+            cards.innerHTML+=card;
+        }
+
+        function show(){
+            var el = event.target;
+            alert(el.dataset.pname+","+el.dataset.id+","+el.dataset.pqty);
+        }
+
+    </script>
+</body>
+</html>
