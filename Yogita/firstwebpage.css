@@ -1,0 +1,109 @@
+.bgcolor{
+    background-color:khaki;
+}
+.logo
+{
+    border-radius: 1px;
+    height: 8%;
+    width: 8%;
+    border-radius: 50%;
+}
+.threeimg{
+    border-radius: 40%;
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+}
+.inbox{
+    /* background-color: snow; */
+    float: right;
+    margin-top: 1%;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    top: 50px;
+    border-radius: 10%;
+    font-family: cursive;
+}
+.comname{
+    color:maroon;
+     font-family:cursive;
+    font-size:xx-large; 
+    position: relative; 
+    bottom: 50px; 
+    display: inline;
+}
+div>a{
+    font-size:larger;
+    font-family:cursive;
+    float: left;
+    padding: 10px;
+    color:maroon;
+}
+.mainimg{
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+.main{
+    font-family: cursive; 
+    width: 90%; 
+    text-align: center; 
+    margin-left: 5%; 
+    position: relative; 
+    top: 50px;
+}
+.one{
+        width: 30%;
+        float: left;
+        margin-left: 30px;
+        background-color:pink;
+        border-radius: 10%;
+        font-family: cursive;
+        text-align: center;
+        height: 350px;
+}
+.last{
+    width: 30%;
+    float: left;
+    margin-left: 30px;
+    font-family: cursive;
+    text-align: center;
+    height: 250px;
+    position: relative;
+    top: 50px;
+    border-right: solid black;
+    color: black;
+}
+.sticky{
+    position: sticky;
+    top:5%;
+    background-color: black;
+    color: cornsilk;
+    width: 100%;
+}
+.alla{
+    background-color:black; color: blanchedalmond;
+}
+/* .two{
+        width: 30%;
+        float: left;
+        margin-left: 40px;
+        background-color: pink;
+        border-radius: 10%;
+        font-family: cursive;
+        text-align: center;
+        height: 350px;
+
+
+}
+.three{
+        width: 30%;
+        float: right;
+        margin-right: 30px;
+        background-color:pink;
+        border-radius: 10%;
+        font-family: cursive;
+        text-align: center;
+        height: 350px;
+} */

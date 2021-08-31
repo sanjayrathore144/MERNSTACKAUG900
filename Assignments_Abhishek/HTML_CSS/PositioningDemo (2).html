@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 90%;
+            background-color: aqua;
+            margin-top:200px;
+            /* position:absolute; */
+        }
+        .one{
+            width: 90%;
+            height: 200px;
+            background-color: bisque;
+            /* position: absolute; */
+            /* top:50px;
+            left:50px */
+        }
+        .two{
+            width: 90%;
+            height: 200px;
+            background-color: brown;
+            /* position: absolute; */
+            top:100px;
+            left:100px       
+            
+        }
+        .three{
+            width: 90%;
+            height: 200px;
+            background-color: blueviolet;            
+        }
+
+        .four{
+                width: 100px;
+                height: 100px;
+                background-color: chartreuse;
+                position: absolute;
+                top:30px;
+                left:200px;
+                z-index: 5;
+        }
+        .five{
+
+                width: 100px;
+                height: 100px;
+                background-color: bisque;
+                position: absolute;
+                top:50px;
+                left:250px;
+        }
+        .frame{
+            width: 500px;
+            height: 150px;
+            background-color: rgb(104, 93, 85);
+            position: relative;
+            top:50px;
+            left:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two">
+            <!-- <div class="frame">
+                <div class="four"></div>
+                <div class="five"></div>
+            </div> -->
+           
+        </div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
+
+relative : move with respect to thier own static origin, will not disturb other elements position.
+absolute : move with respect to thier non static parent's origin, will leave their static area so that other sibling can occupy it.
+fixed : will take place with refrence to viewport. 
+sticky : 
+

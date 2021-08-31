@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      body {
+        background-color: rgba(255, 217, 173, 0.849);
+      }
+      .nav {
+        background-color: #ff5732;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav h2 {
+        text-align: left;
+        justify-content: center;
+        color: aliceblue;
+        font-family: Century Gothic;
+      }
+      .nav > ul {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 60px;
+        background-color: #c92500;
+      }
+
+      .nav > ul > li {
+        height: 60px;
+        width: 15%;
+        line-height: 60px;
+        list-style: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        color: whitesmoke;
+      }
+
+      .nav ul input {
+        background-color: rgba(255, 255, 255, 0.945);
+        border-color: #c92500;
+        color: #ff4318;
+        font-size: medium;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        border-radius: 10px;
+        font-style: normal;
+        padding: 0px 15px;
+      }
+      .nav ul li:hover {
+        background-color: white;
+        color: #ff4318;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .nav ul li ul li {
+        background-color: #ff4318;
+        color: white;
+        width: 100%;
+        display: none;
+        box-sizing: border-box;
+        border: #c92500;
+      }
+      .nav ul li:hover > ul > li {
+        display: block;
+      }
+      .nav ul li ul li ul li {
+        background-color: #ff4318;
+        color: white;
+        width: 100%;
+        display: none;
+      }
+      .nav ul li ul li:hover ul li {
+        display: block;
+      }
+      .right {
+        position: relative;
+        display: flex;
+        top: 60px;
+        width: min-content;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: scroll;
+        border: 1px solid #c92500;
+      }
+      footer {
+        position: relative;
+        top: 800px;
+        left: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h2>Splash</h2>
+      <ul>
+        <li>Home</li>
+        <li>
+          About
+          <ul>
+            <li>Opportunity</li>
+       
+            <li style="position: relative;">
+              Benefit
+              <ul style="position: absolute; top:0; left:100%; width: 100%;">
+                <li>Events</li>            
+                <li>Fun Friday</li>
+                <li>Trips</li>
+              </ul>
+            </li>
+
+            <li>Culture</li>
+          </ul>
+        </li>
+        <li>Services</li>
+        <li>Experience</li>
+        <li>Contact Us</li>
+        <li>
+          <a href="first.html" target="_blank">
+            <input type="button" value="LOGIN" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit, quae.
+    </div>
+    <footer>&copy,Copyright 2021-22</footer>
+  </body>
+</html>

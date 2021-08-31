@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistion</title>
+    <style>
+        .container{
+            margin-top: 100px;
+            margin-left: 120px;
+            height: 60vh;
+            width: 140vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:  'a b c d e '
+                                  'f g h i j'       ;
+        }
+        .one{grid-area: a;} 
+        .two{grid-area: b; }
+        .three{grid-area: c;}
+        .four{grid-area: d;}
+        .five{grid-area: e;}
+        .six{grid-area: f;}
+        .seven{grid-area: g;}
+        .eight{grid-area: h;}
+        .nine{grid-area: i ;}
+        .ten{grid-area: j;}
+        .one,.three,.five,.seven,.nine
+        {transform: rotate(45deg);
+            width: 200px;height: 200px;
+        background-image:url("leaf.jpg");
+        transition: 1s;
+        transform-origin: center;
+    }
+    .one:hover,.three:hover , .five:hover ,.seven:hover ,.nine:hover{
+        transform:rotatex(90deg);
+        background-color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one" ></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+    </div>
+</body>
+</html>
